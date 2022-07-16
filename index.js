@@ -25,6 +25,7 @@ const checkWin = ()=>{
         if(boxtext[e[0]].innerText === boxtext[e[1]].innerText  &&  boxtext[e[1]].innerText === boxtext[e[2]].innerText &&  boxtext[e[0]].innerText !== ''){
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " is won";
             gameover = true;
+            document.querySelector('.imageBox').getElementsByTagName('img')[0].style.width = "200px";
         }
     
       
@@ -47,4 +48,17 @@ Array.from(boxes).forEach(Element=>{
             }
         }
     })
+})
+
+// add onclick listener to reset button
+reset.addEventListener('click', ()=>{
+    let textboxes = document.querySelectorAll('.boxtext');
+    Array.from(textboxes).forEach(element =>{
+        element.innerText = "";
+    })
+    turn = "X"; 
+    gameover = false
+    document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
+    document.querySelector('.imageBox').getElementsByTagName('img')[0].style.width = "0px"
+    
 })
