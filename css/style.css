@@ -79,4 +79,16 @@ nav h1{
 }
 
 
+
+#reset{
+    background: #3a96d2;
+    font-size: 17px;
+    padding: 3px 21px;
+    margin: 0 5px;
+    border: 2px solid #1a7bbb;
+    border-radius: 10px;
+    color: whit
+}
+
+
 /* game info css ends */
