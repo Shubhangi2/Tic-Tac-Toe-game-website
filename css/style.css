@@ -103,3 +103,46 @@ nav h1{
 
 
 /* game info css ends */
+
+
+/* media queyr for 700 */
+@media screen and (max-width: 700px)
+{
+.gameContainer{
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 20px 0;
+}
+
+.gameInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameInfo h1{
+    margin-top: 45px;
+}
+
+}
+
+
+/* media queyr for 700 */
+
+@media screen and (max-width: 700px){
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    
+    }
+
+    .gameInfo{
+        padding: 0px 10px;
+    }
+    .gameInfo h1{
+        font-size: 24px;
+    }
+    
+}
