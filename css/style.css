@@ -37,6 +37,7 @@ nav h1{
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
     margin-right: 15px;
+    position: relative;
 }
 
 .box{
@@ -145,4 +146,13 @@ nav h1{
         font-size: 24px;
     }
     
+}
+
+.line{
+    background-color: black;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: #1a7bbb;
+    transition: width 1s ease-in-out;
 }
